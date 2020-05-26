@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+
+<h2>Here Are All The Articles:</h2>
+
+<% @articles.each do |article|%>
+    <ul>
+    <li><%= article.title %></li>
+    <li><%= article.content %></li>
+<% end %>
+</ul> 
