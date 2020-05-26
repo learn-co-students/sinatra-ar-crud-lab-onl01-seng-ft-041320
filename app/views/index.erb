@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p><%@articles.each do |x|%>
+<h2><%=x.title%></h2>
+   <br><p><%=x.content%> <%end%></p><br><br>
+  <form action="/articles/id" method="post">
+  <label for="id">Enter ID:</label><br>
+  <input type="text" id="id" name="id"><br><br>
+  <input type="submit" id="submit">
+</form>
+</body><br><br>
+</html>
