@@ -1,0 +1,8 @@
+<h1> All Articles</h1>
+
+<ul>
+  <% @articles.map do |article| %>
+  <li>Title: <%= article.title %></li>
+  <li>Content: <%= article.content %></li>
+  <% end %>
+</ul>
