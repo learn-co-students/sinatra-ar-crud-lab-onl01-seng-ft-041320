@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<h2 This Updates a Specific Article </h2>
+
+<form action="/articles/<%= @article.id %>" method="POST">
+    <input id="hidden" type="hidden" name="_method" value="patch">
+        <%= @article.title %>
+        <%= @article.content %>
+    <input id="title" type="text" name="edit_article[title]">
+    <input id="content" type="text" name="edit_article[content]">
+    <input type="submit" id="submit" value="submit">
+</form>
