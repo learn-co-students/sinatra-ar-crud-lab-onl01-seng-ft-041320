@@ -2,6 +2,6 @@
 <%= @article.content %>
 
 <form method="post" action="/articles/<%= @article.id %>">
-    <input type="hidden" name="_method" value="delete"/>
-    <input type="submit"/>
+  <input type="hidden" name="_method" value="delete" />
+  <input type="submit" />
 </form>
