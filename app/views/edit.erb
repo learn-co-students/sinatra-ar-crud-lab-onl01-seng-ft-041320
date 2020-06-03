@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Articles</title>
+</head>
+
+<body>
+<h1>Edit an Article</h1>
+<form action=<%= "/articles/#{@article.id}" %> method="post">
+<input id="hidden" type="hidden" name="_method" value="patch">
+    <label  for="title">Article Title:</label>
+    <input type="string" id="title" name="title" value=<%= @article.title %>>
+    <br>
+    <br>
+    <label  for="content">Article:</label>
+    <textarea id="content" name="content" rows="4" cols="50"><%= @article.content %></textarea>
+    <br>
+    <br>
+    <input type="submit">
+</form>
+<br>
+<form action=<%= "/articles/#{@article.id}" %> method="post">
+<input id="hidden" type="hidden" name="_method" value="delete">
+    <input type="Submit" value="Delete this Article">
+</form>
+
+</body>
+
+</html>
