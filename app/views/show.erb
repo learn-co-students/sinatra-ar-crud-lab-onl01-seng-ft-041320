@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<head>
+    <title>Articles</title>
+</head>
+
+<body>
+<h1>Selected Article</h1>
+    <h2><%= @article.title %></h2>
+    <p><%= @article.content %></p>
+    <br>
+    <a href=<%= "/articles/#{@article.id}/edit" %>>Edit This Article</a>
+</body>
+
+</html>
